@@ -686,3 +686,8 @@ window.addEventListener("click", function (e) {
     modal.style.display = "none";
   }
 });
+
+// menu
+ function toggleMenu() {
+      document.getElementById("nav-menu").classList.toggle("active");
+    }

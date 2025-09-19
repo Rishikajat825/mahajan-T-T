@@ -1264,6 +1264,9 @@ body {
     justify-content: space-between;
     align-items: center;
 }
+.menu-icon{
+    display: none;
+}
 
 .chat-header span {
     font-weight: 600;
@@ -1531,6 +1534,44 @@ body {
         right: 20px;
         left: 20px;
     }
+    .nav-menu {
+        display: none; /* Hide nav links */
+        flex-direction: column;
+        background: #fff;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 200px;
+        padding: 15px;
+      }
+
+      .nav-menu.active {
+        display: flex; /* Show when active */
+      }
+
+      .menu-icon {
+        display: block; /* Show menu icon */
+      }
+}
+@media (max-width:950px){
+    .nav-menu {
+        display: none; /* Hide nav links */
+        flex-direction: column;
+        background: #fff;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 200px;
+        padding: 15px;
+      }
+
+      .nav-menu.active {
+        display: flex; /* Show when active */
+      }
+
+      .menu-icon {
+        display: block; /* Show menu icon */
+      }
 }
 
 @media (max-width: 480px) {
@@ -1562,4 +1603,23 @@ body {
     .newsletter-text h2 {
         font-size: 1.8rem;
     }
-}
+    .nav-menu {
+        display: none; /* Hide nav links */
+        flex-direction: column;
+        background: #fff;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 200px;
+        padding: 15px;
+      }
+
+      .nav-menu.active {
+        display: flex; /* Show when active */
+      }
+
+      .menu-icon {
+        display: block; /* Show menu icon */
+      }
+   
+  }
